@@ -42,5 +42,10 @@ namespace LatihanWeb1
 
             Response.Redirect("m_employee_view.aspx");
         }
+
+        protected void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("m_jobtitle_view.aspx");
+        }
     }
 }

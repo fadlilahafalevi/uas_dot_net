@@ -11,7 +11,7 @@ namespace LatihanWeb1
 {
 
 
-    public partial class m_jobtitle_update
+    public partial class MainMenu
     {
 
         /// <summary>
@@ -24,48 +24,30 @@ namespace LatihanWeb1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// TextBoxJTCode control.
+        /// ButtonEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxJTCode;
+        protected global::System.Web.UI.WebControls.Button ButtonEmployee;
 
         /// <summary>
-        /// TextBoxJTName control.
+        /// ButtonJobTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxJTName;
+        protected global::System.Web.UI.WebControls.Button ButtonJobTitle;
 
         /// <summary>
-        /// TextAreaJTDesc control.
+        /// ButtonLogOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextAreaJTDesc;
-
-        /// <summary>
-        /// ButtonUpdateJT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonUpdateJT;
-
-        /// <summary>
-        /// ButtonCancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonCancel;
+        protected global::System.Web.UI.WebControls.Button ButtonLogOut;
     }
 }

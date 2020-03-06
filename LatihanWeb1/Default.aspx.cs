@@ -33,7 +33,7 @@ namespace LatihanWeb1
 
             if (dt.Rows.Count > 0)
             {
-                Response.Redirect("m_employee_view.aspx");
+                Response.Redirect("MainMenu.aspx");
             }
             else
             {

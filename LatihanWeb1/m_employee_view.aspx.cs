@@ -24,5 +24,34 @@ namespace LatihanWeb1
         {
 
         }
+
+        protected void DeleteButton_Click(object sender, EventArgs e)
+        {
+            LinkButton btn = (LinkButton)sender;
+            GridViewRow row = (GridViewRow)btn.NamingContainer;
+
+            String connStr = ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
+            SqlConnection con = new SqlConnection(connStr);
+            con.Open();
+
+            String employeeId = GridView1.DataKeys[row.RowIndex].Value.ToString();
+            SqlCommand cmd = new SqlCommand("delete from tb_employee where employee_id=@id", con);
+            cmd.Parameters.AddWithValue("@id", employeeId);
+            cmd.ExecuteNonQuery();
+
+            con.Close();
+
+            Response.Redirect("m_employee_view.aspx");
+        }
+
+        protected void ButtonCreate_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("m_employee_create.aspx");
+        }
+
+        protected void ButtonBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MainMenu.aspx");
+        }
     }
 }

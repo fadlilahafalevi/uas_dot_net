@@ -12,18 +12,21 @@
         .auto-style2 {
             width: 197px;
         }
+        .auto-style3 {
+            width: 216px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            MASTER DATA EMPLOYEE<br />
-        </div>
+        <div style="text-align: center;">
+        <div style="width: 400px; margin-left: auto; margin-right:auto;">
+         <h3>UPDATE EMPLOYEE</h3>
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2">Employee ID</td>
                 <td>
-                    <asp:TextBox ID="TextBoxEmpID" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxEmpID" runat="server" Width="216px" ReadOnly="true"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -41,20 +44,21 @@
             <tr>
                 <td class="auto-style2">Address</td>
                 <td>
-                    <textarea id="TextAreaEmpAddress" name="TextAreaEmpAddress" cols="20" rows="2" runat="server"></textarea></td>
+                    <textarea id="TextAreaEmpAddress" name="TextAreaEmpAddress" rows="2" runat="server" class="auto-style3"></textarea></td>
             </tr>
             <tr>
                 <td class="auto-style2">Job</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="JobTitle" DataTextField="jobtitle_name" DataValueField="jobtitle_code">
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="JobTitle" DataTextField="jobtitle_name" DataValueField="jobtitle_code" Height="25px" Width="216px">
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="JobTitle" runat="server" ConnectionString="<%$ ConnectionStrings:DBConnection %>" SelectCommand="SELECT [jobtitle_name], [jobtitle_code] FROM [tb_jobtitle]"></asp:SqlDataSource>
                 </td>
             </tr>
         </table>
-        <asp:Button ID="ButtonUpdateEmp" runat="server" Text="Update" OnClick="ButtonUpdateEmp_Click" Width="106px" />
+            <br />
+        <asp:Button ID="ButtonUpdateEmp" runat="server" Text="Update" OnClick="ButtonUpdateEmp_Click" Width="106px" />&nbsp;&nbsp;&nbsp;
         <asp:Button ID="ButtonCancel" runat="server" OnClick="ButtonCancel_Click" Text="Cancel" Width="105px" />
-        <asp:Button ID="ButtonDelete" runat="server" Text="Delete" OnClick="ButtonDelete_Click" Width="106px" />
+            </div>
         <div style="margin-left: 1080px">
         </div>
         <p style="margin-left: 920px">

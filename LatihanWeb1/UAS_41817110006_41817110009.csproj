@@ -60,6 +60,7 @@
     <Content Include="App_Data\db_employee_log.ldf">
       <DependentUpon>db_employee.mdf</DependentUpon>
     </Content>
+    <Content Include="MainMenu.aspx" />
     <Content Include="m_employee_update.aspx" />
     <Content Include="m_employee_create.aspx" />
     <Content Include="m_jobtitle_update.aspx" />
@@ -79,6 +80,13 @@
     <Content Include="m_employee_view.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="m_employee_update.aspx.cs">
       <DependentUpon>m_employee_update.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
